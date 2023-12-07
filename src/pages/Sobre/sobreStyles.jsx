@@ -112,6 +112,12 @@ flex-direction:column;
 align-items:center;
 justify-content:center;
 
+
+@media(min-width:901px) and (max-width: 1500px){
+      margin-top:240px;
+
+    }
+
 @media(min-width:320px) and (max-width: 500px){
         width:90%;
         //padding:15px;
@@ -128,7 +134,7 @@ justify-content:center;
         .icon-mortarboard{
             margin-top:20px;
         }
-    }
+      }
 
 h2{
     font-family: 'Poppins', sans-serif;
@@ -146,7 +152,6 @@ h2{
 
 }
 `
-
 
 export const H1 = styled.h1`
 //border:blue solid;
@@ -181,6 +186,11 @@ export const ContainerSkills = styled.div`
     height: auto; /* Defina a altura como automática para permitir que os elementos se ajustem dinamicamente */
   }
 
+  @media(min-width:901px) and (max-width: 1500px){
+    margin-top: 6vh;
+  }
+
+
   h1 {
     font-size: 2.3rem;
     font-family: 'Poppins', sans-serif;
@@ -212,6 +222,10 @@ export const Container = styled.div`
       flex-wrap:wrap;
   }
 
+  @media(min-width:901px) and (max-width: 1500px){
+    gap:30px;
+  }
+
   div{
     border:1px #c8c1c1 solid;
     border-radius:9px;
@@ -240,6 +254,12 @@ export const Container = styled.div`
        width:45%;
       height:20vh;
      
+    }
+
+    @media(min-width:901px) and (max-width: 1500px){
+      width:75%;
+      height:20vh;
+    
     }
 
   }

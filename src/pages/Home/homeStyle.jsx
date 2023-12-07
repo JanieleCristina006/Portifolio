@@ -17,15 +17,26 @@ export const ContainerTexto = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  // border: #2f00ff solid;
+  //border: #2f00ff solid;
   width: 35%;
   height: 30vh;
+
+  @media(min-width:901px) and (max-width: 1500px){
+    height: 50vh;
+    width: 45%;
+    justify-content:center;
+}
+
 
   h1 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2.3rem;
+
+    @media(min-width:901px) and (max-width: 1500px){
+    font-size:1.8rem;
+}
   }
 
   span {
@@ -33,6 +44,10 @@ export const ContainerTexto = styled.div`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.7rem;
+
+    @media(min-width:901px) and (max-width: 1500px){
+      font-size: 1.5rem;
+}
   }
 
   @media (min-width: 320px) and (max-width: 500px) {
@@ -49,6 +64,7 @@ export const ContainerTexto = styled.div`
       font-size: 1.2rem;
     }
   }
+
 `;
 
 export const Button = styled.button`
@@ -76,6 +92,11 @@ export const Button = styled.button`
     height: 10vh;
     font-size: 1.1rem;
   }
+
+  @media(min-width:901px) and (max-width: 1500px){
+    width: 65%;
+    
+}
 `;
 
 export const ContainerImagem = styled.div`

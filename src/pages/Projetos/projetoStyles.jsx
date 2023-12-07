@@ -13,7 +13,7 @@ padding-bottom:80px;
 `
 export const H1 = styled.h1`
 
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight:600;
     font-size:2.5rem;
     margin-top:20px;
@@ -40,10 +40,16 @@ div{
   height:65vh;
   margin-top:50px;
 
+
   img{
     width:365px;
     height:250px;
     border-radius:0 10px 0;
+
+    @media(min-width:901px) and (max-width: 1500px){
+      width:75%;
+      height:250px;
+      }
   }
 
   p{
@@ -107,19 +113,17 @@ div{
 
    flex-direction:column;
    width:95%;
-   
-
-
    div{
     width:100%;
     height:500px;
 
     img{
     width:100%;
-  }
+
+
    }
 
-   
+  }
 }
 
 
