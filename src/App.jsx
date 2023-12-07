@@ -1,14 +1,31 @@
 import { Header } from "./components/Header"
-import styled from 'styled-components';
-//import AnimatedCursor from "react-animated-cursor"
+import React, { useState, useEffect } from "react";
+import { PageInicializacao } from "./PageInicializacao";
 
 
 function App() {
+  const [showWelcomePage, setShowWelcomePage] = useState(true);
+
+  useEffect(() => {
+   
+    const timer = setTimeout(() => {
+      setShowWelcomePage(false);
+    }, 4500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
 
   return (
     <>
-      <Header/>
+       {showWelcomePage ? (
+        <PageInicializacao />
+      ) : (
+        <>
+          <Header />
+        </>
+      )}
+      
     </>
   )
 }

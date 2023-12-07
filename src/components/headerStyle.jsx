@@ -11,9 +11,11 @@ export const Nav = styled.nav`
   height: 13vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+ 
+  justify-content: space-around;
   border-bottom: 2px solid black;
   background-color:#121212;
+  //border:red solid ;
   
   ul {
     display: flex;

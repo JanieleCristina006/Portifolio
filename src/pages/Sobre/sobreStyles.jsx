@@ -101,7 +101,7 @@ p{
 }
 `
 export const ContainerFormacacao = styled.div`
-width:72%;
+width:85%;
 height:33vh;
 border:#A430DE solid;
 box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
@@ -167,50 +167,103 @@ gap:10px;
 
 `
 export const ContainerSkills = styled.div`
-display:flex;
-flex-direction:column;
-align-items:center;
-width:72%;
-height:40vh;
-border:#A430DE solid;
-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-margin-top:16vh;
-
-h1{
-    font-size:2.3rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight:500;
-    color:#A430DE;
-    margin-top:15px;
-}
-
-@media(min-width:320px) and (max-width: 500px){
-    margin-top:8vh;
-    width:90%;
-    height:200px;
-
-    //padding-bottom:10vh;
-}
-
-`
-
-const carousel = keyframes`
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-`;
-
-export const Div = styled.div`
   display: flex;
-  overflow: hidden;
-  width: 100%; /* Ajuste conforme necessário */
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  width: 85%;
+  height: 40vh;
+  margin-top: 16vh;
 
-  span {
-    flex: 0 0 75px;
-    margin: 10px;
-    animation: ${carousel} 3s linear infinite;
+  @media (min-width: 320px) and (max-width: 500px) {
+    margin-top: 8vh;
+    width: 95%;
+    height: auto; /* Defina a altura como automática para permitir que os elementos se ajustem dinamicamente */
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #a430de;
+    margin-top: 15px;
+  }
+
+  .icon-skills {
+    font-size: 40px;
+  }
+
+  
+`;
+
+
+export const Container = styled.div`
+  //border: red solid;
+  display: flex;
+  width:100%;
+  height:17vh;
+  justify-content:space-evenly;
+  align-items:center;
+  margin-top:40px;
+
+  @media(min-width:320px) and (max-width: 500px){
+      width:100%;
+      height:80vh;
+      flex-wrap:wrap;
+  }
+
+  div{
+    border:1px #c8c1c1 solid;
+    border-radius:9px;
+    width:15%;
+    height:15vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+
+    &:hover{
+        transform:scale(1.1);
+        border:#A430DE solid;
+    }
+
+    h3{
+       color:white;
+       font-family: 'Poppins', sans-serif;
+       font-weight:500;
+       margin-top:15px;
+    }
+
+    @media(min-width:320px) and (max-width: 500px){
+
+       width:45%;
+      height:20vh;
+     
+    }
+
+  }
+  
+`;
+
+
+export const DivImg = styled.div`
+  border: 1px #c8c1c1 solid;
+  border-radius: 9px;
+  cursor: pointer;
+
+  img {
+    max-width: 75%;
+    height:45px;
+    //border:blue solid;
+    background:transparent;
+  }
+
+  h3 {
+    color:white;
+       font-family: 'Poppins', sans-serif;
+       font-weight:500;
+       margin-top:15px;
   }
 `;
+

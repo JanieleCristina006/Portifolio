@@ -9,25 +9,14 @@ import { FaDownload } from "react-icons/fa";
 export const Home = () => {
 
   const handleDownload = () => {
-    // Lógica para gerar e baixar o currículo
-    const resumeData = 'https://drive.google.com/file/d/1PMTRA5eJVDceJYuBY3Or_j2eslWI_Wjh/view?usp=drive_link'; // Seu currículo em formato de dados ou URL
+    
+    const resumeData = 'https://drive.google.com/file/d/1PMTRA5eJVDceJYuBY3Or_j2eslWI_Wjh/view?usp=drive_link';
 
-    // Cria um elemento de link temporário
     const link = document.createElement('a');
-
-    // Define o href do link como os dados do currículo
     link.href = resumeData;
-
-    // Define o atributo "download" para especificar o nome do arquivo ao baixar
     link.download = 'meu_curriculo.pdf';
-
-    // Adiciona o link ao corpo do documento
     document.body.appendChild(link);
-
-    // Simula um clique no link para iniciar o download
     link.click();
-
-    // Remove o link do corpo do documento após o download
     document.body.removeChild(link);
   };
 
